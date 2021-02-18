@@ -4,7 +4,7 @@ import { provider } from 'web3-core'
 import BigNumber from 'bignumber.js'
 import { useWallet } from 'use-wallet'
 
-import { getEarned, getMasterChefContract } from '../NFTG/utils'
+import { getEarned, getMasterChefContract } from '../nftg/utils'
 import useNFTG from './useNFTG'
 import useBlock from './useBlock'
 

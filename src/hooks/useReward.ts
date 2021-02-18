@@ -3,7 +3,7 @@ import { useCallback } from 'react'
 import useNFTG from './useNFTG'
 import { useWallet } from 'use-wallet'
 
-import { harvest, getMasterChefContract } from '../NFTG/utils'
+import { harvest, getMasterChefContract } from '../nftg/utils'
 
 const useReward = (pid: number) => {
   const { account } = useWallet()

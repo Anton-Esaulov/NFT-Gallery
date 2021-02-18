@@ -6,5 +6,5 @@ BigNumber.config({
   DECIMAL_PLACES: 80,
 })
 
-export { NFTG } from './NFTG.js'
+export { Nftg } from './Nftg.js'
 export { Web3, BigNumber }

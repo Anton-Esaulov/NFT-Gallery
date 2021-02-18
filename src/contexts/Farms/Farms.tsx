@@ -4,8 +4,8 @@ import { useWallet } from 'use-wallet'
 import useNFTG from '../../hooks/useNFTG'
 
 import { bnToDec } from '../../utils'
-import { getMasterChefContract, getEarned } from '../../NFTG/utils'
-import { getFarms } from '../../NFTG/utils'
+import { getMasterChefContract, getEarned } from '../../nftg/utils'
+import { getFarms } from '../../nftg/utils'
 
 import Context from './context'
 import { Farm } from './types'

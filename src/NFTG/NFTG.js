@@ -6,7 +6,7 @@ import { EVM } from './lib/evm.js'
 
 import { contractAddresses } from './lib/constants'
 
-export class NFTG {
+export class Nftg {
   constructor(provider, networkId, testing, options) {
     var realProvider
 

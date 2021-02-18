@@ -1,1 +1,1 @@
-export { Context, default } from './NFTGProvider'
+export { Context, default } from './NftgProvider'

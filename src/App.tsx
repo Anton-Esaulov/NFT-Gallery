@@ -8,7 +8,7 @@ import TopBar from './components/TopBar'
 import FarmsProvider from './contexts/Farms'
 import ModalsProvider from './contexts/Modals'
 import TransactionProvider from './contexts/Transactions'
-import NFTGProvider from './contexts/NFTGProvider'
+import NftgProvider from './contexts/NftgProvider'
 import useModal from './hooks/useModal'
 import theme from './theme'
 import Farms from './views/Farms'
@@ -58,13 +58,13 @@ const Providers: React.FC = ({ children }) => {
           walletconnect: { rpcUrl: 'https://kovan.infura.io/v3/3f3f9248080f4d949bfee6a62837d2a7' },
         }}
       >
-        <NFTGProvider>
+        <NftgProvider>
           <TransactionProvider>
             <FarmsProvider>
               <ModalsProvider>{children}</ModalsProvider>
             </FarmsProvider>
           </TransactionProvider>
-        </NFTGProvider>
+        </NftgProvider>
       </UseWalletProvider>
     </ThemeProvider>
   )

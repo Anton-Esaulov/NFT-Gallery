@@ -2,35 +2,35 @@ import React, { createContext, useEffect, useState } from 'react'
 
 import { useWallet } from 'use-wallet'
 
-import { NFTG } from '../../NFTG'
+import { Nftg } from '../../nftg'
 
 export interface NFTGContext {
-  NFTG?: typeof NFTG
+  nftg?: typeof Nftg
 }
 
 export const Context = createContext<NFTGContext>({
-  NFTG: undefined,
+  nftg: undefined,
 })
 
 declare global {
   interface Window {
-    NFTGsauce: any
+    nftgsauce: any
   }
 }
 
-const NFTGProvider: React.FC = ({ children }) => {
+const NftgProvider: React.FC = ({ children }) => {
   const { ethereum }: { ethereum: any } = useWallet()
-  const [NFTG, setNFTG] = useState<any>()
+  const [nftg, setNftg] = useState<any>()
 
   // @ts-ignore
-  window.NFTG = NFTG
+  window.Nftg = Nftg
   // @ts-ignore
   window.eth = ethereum
 
   useEffect(() => {
     if (ethereum) {
       const chainId = Number(ethereum.chainId)
-      const NFTGLib = new NFTG(ethereum, chainId, false, {
+      const nftgLib = new Nftg(ethereum, chainId, false, {
         defaultAccount: ethereum.selectedAddress,
         defaultConfirmations: 1,
         autoGasMultiplier: 1.5,
@@ -40,12 +40,12 @@ const NFTGProvider: React.FC = ({ children }) => {
         accounts: [],
         ethereumNodeTimeout: 10000,
       })
-      setNFTG(NFTGLib)
-      window.NFTGsauce = NFTGLib
+      setNftg(nftgLib)
+      window.nftgsauce = nftgLib
     }
   }, [ethereum])
 
-  return <Context.Provider value={{ NFTG }}>{children}</Context.Provider>
+  return <Context.Provider value={{ nftg }}>{children}</Context.Provider>
 }
 
-export default NFTGProvider
+export default NftgProvider

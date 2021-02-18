@@ -14,7 +14,7 @@ import useAllStakedValue from '../../../hooks/useAllStakedValue'
 import useFarms from '../../../hooks/useFarms'
 import useTokenBalance from '../../../hooks/useTokenBalance'
 import useNFTG from '../../../hooks/useNFTG'
-import { getNFTGAddress, getNFTGSupply } from '../../../NFTG/utils'
+import { getNFTGAddress, getNFTGSupply } from '../../../nftg/utils'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 
 const PendingRewards: React.FC = () => {

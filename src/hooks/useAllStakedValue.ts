@@ -10,7 +10,7 @@ import {
   getWethContract,
   getFarms,
   getTotalLPWethValue,
-} from '../NFTG/utils'
+} from '../nftg/utils'
 import useNFTG from './useNFTG'
 import useBlock from './useBlock'
 

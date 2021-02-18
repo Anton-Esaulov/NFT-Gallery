@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import { Context } from '../contexts/NFTGProvider'
+import { Context } from '../contexts/NftgProvider'
 
 const useNFTG = () => {
-  const { NFTG } = useContext(Context)
-  return NFTG
+  const { nftg } = useContext(Context)
+  return nftg
 }
 
 export default useNFTG

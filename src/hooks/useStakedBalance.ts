@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import { useWallet } from 'use-wallet'
 
-import { getStaked, getMasterChefContract } from '../NFTG/utils'
+import { getStaked, getMasterChefContract } from '../nftg/utils'
 import useNFTG from './useNFTG'
 import useBlock from './useBlock'
 

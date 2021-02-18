@@ -15,7 +15,7 @@ import useAllStakedValue, {
 } from '../../../hooks/useAllStakedValue'
 import useFarms from '../../../hooks/useFarms'
 import useNFTG from '../../../hooks/useNFTG'
-import { getEarned, getMasterChefContract } from '../../../NFTG/utils'
+import { getEarned, getMasterChefContract } from '../../../nftg/utils'
 import { bnToDec } from '../../../utils'
 
 interface FarmWithStakedValue extends Farm, StakedValue {
