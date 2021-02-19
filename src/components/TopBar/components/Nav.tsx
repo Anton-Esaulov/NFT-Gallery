@@ -32,6 +32,7 @@ const StyledNav = styled.nav`
 const StyledLink = styled(NavLink)`
   color: ${(props) => props.theme.color.grey[400]};
   font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
   text-decoration: none;

@@ -38,7 +38,8 @@ const StyledText = styled.span`
 `
 
 const MasterChefText = styled.span`
-  font-family: 'Kaushan Script', sans-serif;
+  // font-family: 'Kaushan Script', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 `
 
 export default Logo

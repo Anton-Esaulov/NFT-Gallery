@@ -112,6 +112,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   font-size: ${props => props.fontSize}px;
   font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
   height: ${props => props.size}px;
   justify-content: center;
   outline: none;
