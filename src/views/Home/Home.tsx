@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: NFTG-ETH UNI-V2 LP token pool yields TWICE more token
+      🎨<b>Pro Tip</b>: NFTG-ETH UNI-V2 LP token pool yields TWICE more token
         rewards per block.
       </StyledInfo>
       <Spacer size="lg" />
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           margin: '0 auto',
         }}
       >
-        <Button text="🔪 See the Menu" to="/farms" variant="secondary" />
+        <Button text="🎨 See the Menu" to="/farms" variant="secondary" />
       </div>
     </Page>
   )
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
 
 const StyledInfo = styled.h3`
   color: ${(props) => props.theme.color.grey[500]};
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
   padding: 0;

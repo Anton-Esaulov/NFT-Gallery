@@ -11,6 +11,7 @@ const Label: React.FC<LabelProps> = ({ text }) => (
 
 const StyledLabel = styled.div`
   color: ${(props) => props.theme.color.grey[400]};
+  font-size: 18px;
 `
 
 export default Label

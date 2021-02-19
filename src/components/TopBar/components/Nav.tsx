@@ -15,7 +15,7 @@ const Nav: React.FC = () => {
         Staking
       </StyledLink>
       <StyledAbsoluteLink
-        href=""
+        href="https://github.com/talent-blockchain/NFT-Gallery"
         target="_blank"
       >
         About
@@ -32,6 +32,7 @@ const StyledNav = styled.nav`
 const StyledLink = styled(NavLink)`
   color: ${(props) => props.theme.color.grey[400]};
   font-weight: 700;
+  font-size: 18px;
   font-family: 'Roboto Mono', monospace;
   padding-left: ${(props) => props.theme.spacing[3]}px;
   padding-right: ${(props) => props.theme.spacing[3]}px;
