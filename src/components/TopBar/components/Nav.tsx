@@ -15,7 +15,7 @@ const Nav: React.FC = () => {
         Staking
       </StyledLink>
       <StyledAbsoluteLink
-        href="https://github.com/talent-blockchain/NFT-Gallery"
+        href="https://github.com/NFTgallery/"
         target="_blank"
       >
         About
