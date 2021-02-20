@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <Page>
       <PageHeader
         icon={<img src={chef} height={120} />}
-        title="NFTG is Ready"
-        subtitle="Stake Uniswap LP tokens to claim your very own yummy NFTG!"
+        title="Decentralized Auction House"
+        subtitle="The NFT Gallery auctions original 1st Edition NFTs from a wide range of verified artists"
       />
 
       <Container>
@@ -22,8 +22,9 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-      🎨<b>Pro Tip</b>: NFTG-ETH UNI-V2 LP token pool yields TWICE more token
-        rewards per block.
+        <p>Stake Uniswap LP tokens to earn NFTG!</p>
+        {/* 🖼<b>Pro Tip</b>: NFTG-ETH UNI-V2 LP token pool yields TWICE more token
+        rewards per block. */}
       </StyledInfo>
       <Spacer size="lg" />
       <div
@@ -31,7 +32,7 @@ const Home: React.FC = () => {
           margin: '0 auto',
         }}
       >
-        <Button text="🎨 See the Menu" to="/farms" variant="secondary" />
+        <Button text="🖼️ See the Menu" to="/farms" variant="secondary" />
       </div>
     </Page>
   )

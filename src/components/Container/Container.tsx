@@ -11,7 +11,7 @@ const Container: React.FC<ContainerProps> = ({ children, size = 'md' }) => {
   let width: number
   switch (size) {
     case 'sm':
-      width = siteWidth / 2
+      width = siteWidth * 3 / 4
       break
     case 'md':
       width = siteWidth * 2 / 3

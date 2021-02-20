@@ -8,7 +8,7 @@ const Nav: React.FC = () => {
         target="_blank"
         href="https://etherscan.io/address/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd#code"
       >
-        MasterChef Contract
+        Gallery Directors Contract
       </StyledLink>
       <StyledLink
         target="_blank"
